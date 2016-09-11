@@ -1,7 +1,7 @@
-console.log("I'm logging shit");
+alert("I'm logging shit");
 
 var target = $('body *')
-  .filter(':contains(Amreeta)')
+  .filter(':contains(class = img)')
   .filter(':not(:has(div))')
   .css({
     'background-color': "black",
@@ -10,3 +10,4 @@ var target = $('body *')
   });
 
 target.children().css('visibility', 'hidden');
+
